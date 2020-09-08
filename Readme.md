@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Максим](https://up.htmlacademy.ru/htmlcss/29/user/1557329).
-* Наставник: `[Артур Трифонов](https://htmlacademy.ru/profile/wrgraff)`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
