@@ -33,28 +33,32 @@
   --white-strange: rgba(255, 255, 255, 1);
   --white-special: rgba(255, 255, 255, 0.5);
   --green-dark: #518534;
+  --special:  rgba(0, 0, 0, 0.24);
+  --special-another: #EAEAEA;
+  --green-darken: #367315;
+  --blue-shadow: #405069;
 }
 
 
 /*Global*/
 
-body {
+body{
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "PT Sans";
+  font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-black);
-  background-color: var(--gray-background);
+  background-color: var(--basic-white);
 }
 
-a {
+a{
   text-decoration: none;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
 }
@@ -62,27 +66,27 @@ img {
 
 /*Main-header*/
 
-.main-header {
+.main-header{
   min-width: 960px;
   margin: 0;
   padding: 0;
   color: var(--basic-white);
-  background-color: rgba(0, 0, 0, 0.0001);
+  background-color: var(--basic-strange);
 }
 
-.main-header-wrapper {
+.main-header-wrapper{
   background-color: var(--basic-dark);
 }
 
-.main-header-logo {
+.main-header-logo{
   background: var(--basic-red);
 }
 
 .main-header-button a:active{
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--special);
 }
 
-.bookmarks {
+.bookmarks{
   color: var(--basic-white);
 }
 
@@ -90,7 +94,7 @@ img {
   color: var(--white-special);
 }
 
-.cart {
+.cart{
   color: var(--basic-white);
 }
 
@@ -98,7 +102,7 @@ img {
   color: var(--white-special);
 }
 
-.order {
+.order{
   padding: 9px;
   padding-right: 16px;
   padding-left: 19px;
@@ -118,17 +122,18 @@ img {
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+  font-style: italic;
 }
 
-.main-contacts-phone {
+.main-contacts-phone{
   padding-left: 74px;
   padding-top: 7px;
   padding-bottom: 8px;
   padding-right: 45px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--basic-white);
   font-size: 21px;
   line-height: 30px;
-  background-color: #F3F7F9;
+  background-color: var(--blue-lighten);
   color: var(--basic-red);
   
 }
@@ -174,15 +179,15 @@ img {
   
 }
 
-.main-navigation {
+.main-navigation{
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  background-color: #32425C;
-  box-shadow: inset 0px -5px 0px #293449;
+  background-color: var(--blue-dark);
+  box-shadow: inset 0px -5px 0px var(--basic-dark);
 }
 
-.site-navigation {
+.site-navigation{
   list-style: none;
 }
 
@@ -222,6 +227,7 @@ img {
   padding-bottom: 73px;
   padding-right: 163px;
   background-color: var(--basic-yellow);
+  font-weight: bold;
 }
 
 .materials-button{
@@ -250,6 +256,7 @@ img {
   padding-bottom: 73px;
   padding-right: 161px;
   background-color: var(--basic-blue);
+  font-weight: bold;
 }
 
 .instruments-button{
@@ -271,6 +278,7 @@ img {
   padding-bottom: 73px;
   padding-right: 161px;
   background-color: var(--basic-pink);
+  font-weight: bold;
 }
 
 .tech-button{
@@ -312,6 +320,7 @@ img {
   padding-bottom: 73px;
   padding-right: 159px;
   background-color: var(--green-light);
+  font-weight: bold;
 }
 
 .sale-button{
@@ -340,6 +349,7 @@ img {
   padding-bottom: 73px;
   padding-right: 188px;
   background-color: var(--yellow-extra);
+  font-weight: bold;
 }
 
 .delivery-content-button{
@@ -382,13 +392,15 @@ img {
   text-transform: uppercase;
 }
 
-.goods-list {
+.goods-list{
   list-style: none;
 }
 
 .goods-item{
   background-color:var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-another);
+  font-family: "PT Sans"; 
+  font-weight: bold;
 }
 
 
@@ -405,7 +417,7 @@ img {
 }
 
 .info{
-  color: #A9A9A9;
+  color: var(--gray-extralight);
   text-decoration: line-through;
 }
 
@@ -416,7 +428,7 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--green-darken);
   border-radius: 2px;
   padding-left: 53px;
   padding-top: 10px;
@@ -445,7 +457,7 @@ img {
   text-transform: uppercase;
   color: var(--blue-dark);
   border-radius: 2px;
-  border: 3px solid #63A63E;
+  border: 3px solid var(--basic-green);
   padding-left: 33px;
   padding-top: 11px;
   padding-bottom: 9px;
@@ -457,12 +469,12 @@ img {
 }
 
 .button-bookmark a:hover{
-  border: 3px solid #32425C;
+  border: 3px solid var(--blue-dark);
   
 }
 
 .button-bookmark a:active{
-  border: 3px solid #32425C;
+  border: 3px solid var(--blue-dark);
   opacity: 0.5;
 }
 
@@ -492,7 +504,7 @@ img {
 
 .companies-item{
   background-color:var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-another);
 }
 
 
@@ -501,24 +513,32 @@ img {
 
 
 .services{
-  background-color: #F1F5F7;
+  background-color: var(--blue-light);
   
 }
 .services h2{
   color: var(--basic-black);
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
+
+.services h3{
+  text-transform: uppercase;
+  color: var(--blue-dark);
+}
+
 .services p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans";
 }
 
 .services-list{
   list-style: none;
-  background: #32425C;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  background: var(--blue-dark);
+  box-shadow: 0px 1px 0px var(--basic-dark), inset 0px 1px 0px var(--blue-shadow);
   font-size: 21px;
   line-height: 30px;
 }
@@ -551,15 +571,15 @@ img {
 }
 
 .services-list a:hover{
-  background: #293449;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  background: var(--basic-dark);
+  box-shadow: 0px 1px 0px var(--basic-dark), inset 0px 1px 0px var(--blue-shadow);
   color: var(--basic-white);
 }
 
 .services-list a:active{
   color: var(--blue-dark);
   background-color: var(--basic-white);
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+  box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
 }
 
 .credit-button{
@@ -578,11 +598,13 @@ img {
   color: var(--basic-black);
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 .description p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
+  font-family: PT Sans;
 }
 
 .description-list{
@@ -603,12 +625,14 @@ img {
   color: var(--basic-black);
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
+  font-family: PT Sans;
 }
 
 .contacts-button{
@@ -628,8 +652,8 @@ img {
 
 
 .main-footer-logo{
-  background: #EE3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--special);
 }
 
 .main-footer{
@@ -739,14 +763,3 @@ img {
 .footer-mail a:active, .footer-copyright a:active{
   color: var(--basic-red);
 }
-/*M
-
-
-
-
-
-
-
-
-
-
