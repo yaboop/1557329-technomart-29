@@ -37,6 +37,8 @@
   --special-another: #EAEAEA;
   --green-darken: #367315;
   --blue-shadow: #405069;
+
+  --font: "Cuprum", Arial, sans-serif;
 }
 
 
@@ -46,12 +48,11 @@ body{
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 a{
@@ -71,7 +72,8 @@ img{
   margin: 0;
   padding: 0;
   color: var(--basic-white);
-  background-color: var(--basic-strange);
+  background-color: var(--blue-lighten);
+  font-family: var(--font);
 }
 
 .main-header-wrapper{
@@ -135,13 +137,14 @@ img{
   line-height: 30px;
   background-color: var(--blue-lighten);
   color: var(--basic-red);
-  
+  font-family: var(--font-family);
+  font-weight: bold; 
 }
 
 .main-contacts-address{
   font-size: 14px;
   line-height: 24px;
-  color: var(--blue-dark)
+  color: var(--blue-dark);
 }
 
 .user-navigation{
@@ -212,6 +215,7 @@ img{
   list-style: none;
   font-size: 24px;
   line-height: 30px;
+  font-family: var(--font);
 }
 
 .content-item a{
@@ -306,6 +310,7 @@ img{
   list-style: none;
   font-size: 24px;
   line-height: 30px;
+  font-family: var(--font);
 }
 
 .benefits-item a{
@@ -378,6 +383,7 @@ img{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .button-goods{
@@ -390,6 +396,7 @@ img{
   padding-right: 24px;
   background-color: var(--basic-red);
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .goods-list{
@@ -399,7 +406,6 @@ img{
 .goods-item{
   background-color:var(--basic-white);
   border: 1px solid var(--special-another);
-  font-family: "PT Sans"; 
   font-weight: bold;
 }
 
@@ -434,6 +440,7 @@ img{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 40px;
+  font-family: var(--font);
 }
 
 .button-buy a{
@@ -462,6 +469,7 @@ img{
   padding-top: 11px;
   padding-bottom: 9px;
   padding-right: 34px;
+  font-family: var(--font);
 }
 
 .button-bookmark a{
@@ -484,6 +492,7 @@ img{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .companies-button{
@@ -496,6 +505,7 @@ img{
   padding-right: 38px;
   background-color: var(--basic-red);
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .companies-list{
@@ -521,18 +531,19 @@ img{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .services h3{
   text-transform: uppercase;
   color: var(--blue-dark);
+  font-family: var(--font);
 }
 
 .services p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans";
 }
 
 .services-list{
@@ -541,6 +552,10 @@ img{
   box-shadow: 0px 1px 0px var(--basic-dark), inset 0px 1px 0px var(--blue-shadow);
   font-size: 21px;
   line-height: 30px;
+}
+
+.services-item{
+  font-family: var(--font);
 }
 
 
@@ -599,16 +614,18 @@ img{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: var(--font);
 }
+
 .description p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
-  font-family: PT Sans;
 }
 
 .description-list{
   list-style: none;
+  font-family: var(--font);
 }
 
 .description-button{
@@ -619,6 +636,7 @@ img{
   padding-right: 40.29px;
   background-color: var(--basic-red);
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .contacts h2{
@@ -626,13 +644,13 @@ img{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .contacts p{
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
-  font-family: PT Sans;
 }
 
 .contacts-button{
@@ -645,6 +663,7 @@ img{
   padding-right: 61.13px;
   background-color: var(--basic-red);
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 
@@ -658,6 +677,7 @@ img{
 
 .main-footer{
   background-color: var(--blue-dark);
+  font-family: var(--font);
 }
 
 .footer-address{
