@@ -37,6 +37,7 @@
   --special-another: #EAEAEA;
   --green-darken: #367315;
   --blue-shadow: #405069;
+  --dark-gradient: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
 
   --font: "Cuprum", Arial, sans-serif;
 }
@@ -137,7 +138,7 @@ img{
   line-height: 30px;
   background-color: var(--blue-lighten);
   color: var(--basic-red);
-  font-family: var(--font-family);
+  font-family: var(--font);
   font-weight: bold; 
 }
 
@@ -155,7 +156,7 @@ img{
 }
 
 .user-navigation a{
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 .user-navigation a:hover{
@@ -180,6 +181,47 @@ img{
   padding-bottom: 12px;
   padding-right: 24px;
   
+}
+
+
+.user-page{
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  font-family: var(--font);
+}
+
+.user-page a{
+  color: var(--basic-black);
+}
+
+.user-page a:active{
+  color: var(--gray-dark);
+}
+
+.personal{
+  padding-left: 56px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 57px;
+  background-color: var(--basic-white);
+}
+
+.user-links{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-links a{
+  color: var(--blue-dark);
+}
+
+.user-links a:hover{
+  color: var(--basic-red);
+}
+
+.user-links a:active{
+  color: var(--gray-dark);
 }
 
 .main-navigation{
@@ -409,6 +451,46 @@ img{
   font-weight: bold;
 }
 
+.perforators-list{
+  list-style: none;
+}
+
+.perforators-list-item{
+  background-color:var(--basic-white);
+  border: 1px solid var(--special-another);
+  font-weight: bold;
+}
+
+.page-buttons{
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.page-buttons-list a{
+  color: var(--basic-black);
+  border-radius: 2px;
+  border: 1px solid var(--gray-another);
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.page-buttons-list a:hover{
+  border: 1px solid var(--gray-dark);
+}
+
+.page-buttons-list a:active{
+  border: 1px solid var(--basic-red);
+}
+
+.next{
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
 
 
 .price{
@@ -517,6 +599,59 @@ img{
   border: 1px solid var(--special-another);
 }
 
+.page-catalog-list{
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+  font-family: var(--font);
+}
+
+.page-catalog-item a{
+  color: var(--basic-black);
+}
+
+.perforators{
+  font-family: var(--font);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  padding-left: 29px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-right: 739px;
+  background-color: var(--gray-light);
+}
+
+.sorting-section{
+  background-color: var(--brown-light);
+}
+
+.sorting{
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sorting-list{
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.sorting-list-item a{
+  opacity: 0,3;
+  color: var(--basic-black);
+}
+
+.sorting-list-item a:hover{
+  color: var(--basic-black);
+}
+
+.sorting-list-item a:active{
+  color: var(--basic-red);
+}
 
 
 
@@ -664,6 +799,24 @@ img{
   background-color: var(--basic-red);
   text-transform: uppercase;
   font-family: var(--font);
+}
+
+.perforators-info{
+  background-color: var(--blue-light);
+}
+
+.perforators-info h2{
+  font-size: 30px;
+  line-height: 30px;
+  font-family: var(--font);
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.perforators-info p{
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
 
 
