@@ -287,11 +287,11 @@ img{
   padding-right: 24px;
 }
 
-.materials-button a:hover{
+.materials-button:hover{
   background-color: var(--gray-dark);
 }
 
-.materials-button a:active{
+.materials-button:active{
   background-color: var(--gray-extralight);
 }
 
@@ -316,6 +316,14 @@ img{
   padding-right: 26px;
 }
 
+.instruments-button:hover{
+  background-color: var(--gray-dark);
+}
+
+.instruments-button:active{
+  background-color: var(--gray-extralight);
+}
+
 
 .tech{
   color: var(--basic-white);
@@ -338,11 +346,11 @@ img{
   padding-right: 31px;
 }
 
-.tech-button a:hover{
+.tech-button:hover{
   background-color: var(--gray-dark);
 }
 
-.tech-button a:active{
+.tech-button:active{
   background-color: var(--gray-extralight);
 }
 
@@ -381,11 +389,11 @@ img{
   padding-right: 23px;
 }
 
-.sale-button a:hover{
+.sale-button:hover{
   background-color: var(--gray-dark);
 }
 
-.sale-button a:active{
+.sale-button:active{
   background-color: var(--gray-extralight);
 }
 
@@ -410,11 +418,11 @@ img{
   padding-right: 37px;
 }
 
-.delivery-content-button a:hover{
+.delivery-content-button:hover{
   background-color: var(--gray-dark);
 }
 
-.delivery-content a:active{
+.delivery-content:active{
   background-color: var(--gray-extralight);
 }
 
@@ -478,11 +486,11 @@ img{
 }
 
 .page-buttons-list a:hover{
-  border: 1px solid var(--gray-dark);
+  border-color: var(--gray-dark);
 }
 
 .page-buttons-list a:active{
-  border: 1px solid var(--basic-red);
+  border-color: var(--basic-red);
 }
 
 .next{
@@ -509,12 +517,14 @@ img{
   text-decoration: line-through;
 }
 
-
-.button-buy{
+.function-button{
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-white);
   text-transform: uppercase;
+  font-family: var(--font);
+}
+
+.button-buy{
   background-color: var(--basic-green);
   box-shadow: inset 0px -3px 0px var(--green-darken);
   border-radius: 2px;
@@ -522,28 +532,18 @@ img{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 40px;
-  font-family: var(--font);
-}
-
-.button-buy a{
   color: var(--basic-white);
 }
 
-.button-buy a:hover{
+.button-buy:hover{
   background-color: var(--green-extra-light);
-  color: var(--basic-white);
 }
 
-.button-buy a:active{
+.button-buy:active{
   background-color: var(--green-dark);
-  color: var(--basic-white);
 }
-
 
 .button-bookmark{
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
   color: var(--blue-dark);
   border-radius: 2px;
   border: 3px solid var(--basic-green);
@@ -551,22 +551,16 @@ img{
   padding-top: 11px;
   padding-bottom: 9px;
   padding-right: 34px;
-  font-family: var(--font);
 }
 
-.button-bookmark a{
-  color: var(--blue-dark);
+.button-bookmark:hover{
+  border-color: var(--blue-dark);
 }
 
-.button-bookmark a:hover{
-  border: 3px solid var(--blue-dark);
-  
+.button-bookmark:active{
+  opacity: 0,5;
 }
 
-.button-bookmark a:active{
-  border: 3px solid var(--blue-dark);
-  opacity: 0.5;
-}
 
 .companies{
   color: var(--blue-dark);
@@ -620,7 +614,7 @@ img{
   padding-left: 29px;
   padding-top: 29px;
   padding-bottom: 30px;
-  padding-right: 739px;
+  padding-right: 29px;
   background-color: var(--gray-light);
 }
 
@@ -642,10 +636,6 @@ img{
 
 .sorting-list-item a{
   opacity: 0,3;
-  color: var(--basic-black);
-}
-
-.sorting-list-item a:hover{
   color: var(--basic-black);
 }
 
