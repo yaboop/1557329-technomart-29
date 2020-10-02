@@ -38,6 +38,8 @@
   --green-darken: #367315;
   --blue-shadow: #405069;
   --dark-gradient: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
+  --black-extra: #161D29;
+  --red-extra: #BA2732;
 
   --font: "Cuprum", Arial, sans-serif;
 }
@@ -83,10 +85,20 @@ img{
 
 .main-header-logo{
   background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--special);
+  padding-left: 55px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  padding-right: 57px;
+}
+
+.main-header-logo img{
+  vertical-align: middle;
 }
 
 .main-header-button a:active{
   box-shadow: inset 0px -5px 0px var(--special);
+  background-color: var(--red-extra);
 }
 
 .bookmarks{
@@ -95,6 +107,7 @@ img{
 
 .bookmarks-button a:active{
   color: var(--white-special);
+  background-color: var(--black-extra);
 }
 
 .cart{
@@ -816,6 +829,14 @@ img{
 .main-footer-logo{
   background: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--special);
+  padding-left: 41px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 41px;
+}
+
+.main-footer-logo img{
+  vertical-align: middle;
 }
 
 .main-footer{
