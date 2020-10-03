@@ -90,6 +90,7 @@ img{
   padding-top: 12px;
   padding-bottom: 17px;
   padding-right: 57px;
+  display: block;
 }
 
 .main-header-logo img{
